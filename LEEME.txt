@@ -1,0 +1,65 @@
+CODEC CLUB ÑANDUTÍ — Editor de Bloques para Arduino (sin conexión)
+====================================================================
+
+Esta carpeta contiene la app completa para usar SIN internet: el editor
+Blockly, las tipografías y todos los íconos/sonidos ya están incluidos
+adentro, no se descarga nada de ningún servidor.
+
+Estructura de la carpeta (no muevas ni renombres nada de esto):
+
+  index.html                          <- abrí este archivo
+  lib/blockly/blockly_compressed.js
+  lib/blockly/blocks_compressed.js
+  lib/blockly/javascript_compressed.js
+  lib/blockly/msg/es.js
+  lib/blockly/media/...                <- íconos, sonidos y cursores de Blockly
+
+
+CÓMO ABRIRLA EN UNA COMPUTADORA
+--------------------------------
+1. Copiá esta carpeta completa a la computadora (pendrive, WhatsApp Web, etc).
+   Es importante copiar la CARPETA entera, no solo el index.html: la app
+   necesita los archivos de la subcarpeta "lib" para funcionar.
+2. Hacé doble clic en "index.html". Se abre en el navegador (Chrome, Edge,
+   Firefox) sin pedir internet.
+
+
+CÓMO ABRIRLA EN UN CELULAR (Android / iPhone)
+----------------------------------------------
+1. Copiá la carpeta completa al teléfono (por cable, WhatsApp, Bluetooth, o
+   una app de archivos).
+2. Abrí "index.html" con el navegador del teléfono (mantené tocado el
+   archivo → "Abrir con" → Chrome/Safari).
+3. Todo funciona igual que en la compu: elegís la placa, armás los bloques,
+   generás el código y lo descargás como archivo .ino.
+
+Nota para iPhone: Safari a veces abre los .html como texto plano en vez de
+como página. Si pasa eso, tocá el ícono de compartir dentro del visor y
+elegí "Abrir en Safari".
+
+
+SI LA VAS A PUBLICAR EN UNA PÁGINA WEB (GitHub Pages, etc.)
+--------------------------------------------------------------
+El botón "📦 Descargar app offline" de la portada apunta al archivo
+"Arduino-Bloques-Offline.zip" que está en esta misma carpeta, mediante un
+link relativo. Para que ese botón funcione una vez publicado:
+
+1. Subí TODA esta carpeta (index.html + lib/) a tu sitio.
+2. Subí también el archivo "Arduino-Bloques-Offline.zip" (el mismo que
+   contiene esta carpeta) en el mismo lugar donde quedó el index.html.
+
+Si preferís que el botón apunte a otra URL fija (por ejemplo, si vas a alojar
+el zip en otra dirección), pasame el link y te actualizo el botón.
+
+
+QUÉ FUNCIONA SIN INTERNET
+---------------------------
+✅ Elegir placa (Arduino Uno, ESP32, ESP8266, etc.)
+✅ Armar el programa con bloques (Blockly, con sus íconos y sonidos locales)
+✅ Generar el código C++ / .ino
+✅ Descargar el código como archivo .ino
+✅ El simulador de la placa virtual
+✅ Los ejemplos y la guía de conexión
+
+
+Codec Club Ñandutí · Didáctica Aumentada
